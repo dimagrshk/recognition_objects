@@ -16,5 +16,6 @@ for c in cnts:
     if len(approx) == 4:
         cv2.drawContours(img, [approx], -1, (0, 255, 0), 4)
         total += 1
-print("I found {0} books in this photo".format(total))
+print("I found {0} books in this photo, plase check the result in the photo".format(total))
 cv2.imwrite("output.jpg", img)
+
